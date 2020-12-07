@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_256.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177870064-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177870064-1');
+    </script>
+
+
+    <meta name="theme-color" content="#063f29">
+    <!-- Face Book OG -->
+    <meta property="og:url" content="https://arunkumarn-eee.github.io/arunkumarn.in/" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Happy VaikathSshtami : 08 December 2020"/>
+    <meta property="og:description" content="Wishes to you and your family a happy Vaikathashtami. Let the Vaikathappa bring peace and harmony to all the living beings | Arun kumar N" />
+    <meta property="og:image"
+        content="https://arunkumarn-eee.github.io/arunkumarn.in/dist/images/wishes/vaikom.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@arunkumarn_eee">
+    <meta name="twitter:creator" content="@ArunkumarN">
+    <meta name="twitter:title" content="Happy VaikathSshtami : 08 December 2020">
+    <meta name="twitter:description"
+        content="Wishes to you and your family a happy Vaikathashtami. Let the Vaikathappa bring peace and harmony to all the living beings | Arun kumar N">
+    <meta name="twitter:image"
+        content="https://arunkumarn-eee.github.io/arunkumarn.in/dist/images/wishes/vaikom.jpg">
+
+
+    <title>Happy VaikathSshtami : 08 December 2020 | Arun kumar N</title>
+    <link rel="stylesheet" href="dist/css/materialize.min.css">
+    <link rel="stylesheet" href="dist/css/deepavali.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            color: #26021991!important;
+
+        }
+        body{
+            background-image: url(/dist/images/wishes/vaikom.jpg);
+            background-size:150vh;
+            background-repeat:repeat-x;
+            background-blend-mode:overlay;
+        }
+        ::placeholder {
+            color: #ffbb00;
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <div class="col-sm-12 col-md-12">
+            <div class="container center">
+                <p></p>
+                <img class="responsive-img circle " alt="Vaikom Mahadeva" src="/dist/images/wishes/vm.jpg">
+            </div>
+            <h5 class="center amber-text">OM NAMA SHIVAYA</h5>
+            <p class="blue-text text-lighten-3 center">VaikathAshtami Wishes to</p>
+            <h5 id="url_name" class="white-text center"></h5>
+            <p class="blue-text text-lighten-3 center">& Your Family</p>
+            <p class="amber-text text-lighten-3 center">Let the Vaikathappa bring peace and harmony to all the living beings</p>
+        </div>
+        
+    </div>
+    <!--  Mobile Bottom Tab -->
+    <div class="row mobile-bottom hide-on-med-and-up transparent">
+
+        <div class="col s12 center">
+
+            <a href="https:arunkumarn.in" target="_blank" class="pad1 tooltipped amber-text text-lighten-3 center" data-position="top"
+                data-tooltip="Arun kumar N">
+                <img src="favicon_256.png" style="height: 25px;" class="responsive-img circle " alt="Arun kumar n">
+                arunkumarn.in
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+
+        const urlParams = new URLSearchParams(queryString);
+        const name = urlParams.get('name');
+        console.log(name);
+        if (name === "") {
+            document.getElementById("url_name").innerHTML = "YOU";
+        }
+        else {
+            document.getElementById("url_name").innerHTML = name;
+        }
+
+    </script>
+
+</body>
+
+</html>
